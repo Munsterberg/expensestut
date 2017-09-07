@@ -1,0 +1,32 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "react/jsx-no-undef": 2,
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "strict": 0,
+    "no-unused-vars": 2,
+    "prefer-const": 2,
+    "linebreak-style": ["error", "unix"],
+    "semi": ["error", "always"],
+    "indent": ["error", 2, {"SwitchCase": 1}],
+    "react/prop-types": 2,
+    "react/prefer-es6-class": 2,
+    "react/no-direct-mutation-state": 2
+  }
+}
