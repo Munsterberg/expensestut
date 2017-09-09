@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 
 import Layout from './layout';
 
+import 'normalize.css/normalize.css';
+import './styles/styles.scss';
+
 class App extends React.Component {
   state = {
     summonerName: 'jake'
