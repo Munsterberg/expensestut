@@ -1,6 +1,9 @@
 import React from 'react';
 import { object } from 'prop-types';
 
+import Header from './common/Header';
+import Footer from './common/Footer';
+
 Layout.propTypes = {
   children: object.isRequired
 };
@@ -8,13 +11,9 @@ Layout.propTypes = {
 function Layout(props) {
   return (
     <div>
-      <header>
-        This is the header
-      </header>
+      <Header />
       {props.children}
-      <footer>
-        this is the footer
-      </footer>
+      <Footer />
     </div>
 
   );

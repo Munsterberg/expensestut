@@ -1,31 +1,16 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Layout from '../components/Layout';
-
-function DashBoard() {
-  return (
-    <div>
-      hi
-    </div>
-  );
-}
-
-function NotFoundPage() {
-  return (
-    <div>
-      <h2>Page not found</h2>
-      <Link to="/">Go Home</Link>
-    </div>
-  );
-}
+import NotFoundPage from '../components/NotFoundPage';
+import DashboardPage from '../components/DashboardPage.js';
 
 function AppRouter() {
   return (
     <BrowserRouter>
       <Layout>
         <Switch>
-          <Route path="/" component={DashBoard} exact={true} />
+          <Route path="/" component={DashboardPage} exact={true} />
           <Route component={NotFoundPage} />
         </Switch>
       </Layout>
