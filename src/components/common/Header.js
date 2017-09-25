@@ -6,6 +6,7 @@ function Header() {
     <header>
       <ul>
         <NavLink to="/" activeClassName="active-link"><li>Home</li></NavLink>
+        <NavLink to="/add" activeClassName="active-link"><li>Add Expense</li></NavLink>
       </ul>
     </header>
   );
